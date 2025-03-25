@@ -10,13 +10,13 @@ def multiplicacion(a, b):
     return a * b
 
 def division(a, b):
-    return a / b if b != 0 else "Error: División por cero"
+    return a / b if b != 0 else "Error: División por cero... vuelva a intentarlo"
 
 def potencia(a, b):
     return a ** b
 
 def raiz_cuadrada(a):
-    return math.sqrt(a) if a >= 0 else "Error: Raíz de número negativo"
+    return math.sqrt(a) if a >= 0 else "Error: Raíz de número negativo... vuelva a intentarlo"
 
 def calculadora():
     while True:
@@ -29,10 +29,10 @@ def calculadora():
         print("6. Raíz Cuadrada")
         print("7. Salir")
         
-        opcion = input("Seleccione una operación (1-7): ")
+        opcion = input("Seleccione una operación (1-7) solo valor numericos : ")
         
         if opcion == "7":
-            print("Saliendo...")
+            print("Saliendo... por favor esperar el sistema")
             break
         
         if opcion in ["1", "2", "3", "4", "5"]:
@@ -53,7 +53,7 @@ def calculadora():
             a = float(input("Ingrese el número: "))
             print("Resultado:", raiz_cuadrada(a))
         else:
-            print("Opción no válida, intente de nuevo.")
+            print("Opción no válida, intente de nuevo.... vuelva a intentarlo")
 
 if __name__ == "__main__":
     calculadora()
